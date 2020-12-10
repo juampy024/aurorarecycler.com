@@ -1,0 +1,202 @@
+:root {
+--primary-color:#009AFF;
+--secondary-color:#F1FFFA;
+--ptext-color:#568259;
+--text-color:#b2bcc9;
+}
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700');
+body{
+margin: 0px;
+padding: 0px;
+box-sizing: border-box;
+display: flexbox;
+font-family: 'Poppins', sans-serif;
+}
+.main {
+  overflow: hidden;
+}
+.post{
+margin-left: 5rem;
+color: #4e4e4e; 
+font-size: 1rem;
+line-height: 1.7rem;
+}
+
+.post h1{
+  line-height: 2.5rem;
+  margin-top: 3rem;
+}
+
+.post ul, li, b{
+  font-size: 1.2rem;
+}
+.post h2{
+margin-top: 2rem;
+line-height: 2rem;
+}
+.post h2, h3, h4{
+  color: #4e4e4e;
+  font-size:180%;
+}
+
+.post li{
+margin-top: 1.5rem;
+}
+.card{
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+.sub-menu a{
+color:#009AFF;
+text-decoration: none;
+font-size: .8rem;
+font-weight: bold;
+
+}
+
+.resume{
+  width:80%;
+  height: auto;
+  color: #fff;
+  margin:3rem 0 3rem 0;
+  padding: 1rem 2rem 1rem 2rem;
+  font-size: 1rem;
+  font-weight: bold;
+  text-align: justify;
+  background-image: linear-gradient(to right, rgba(0, 126, 197, .6), rgba(0,125,255,.6));
+}
+
+
+/* animations */
+.fade-in{
+  opacity: 0;
+ transition: opacity .7s ease-out;
+}
+.fade-in.appear{
+  opacity: 1;  
+}
+
+.fade-left{
+ transform: translateX(100%); 
+
+}
+.fade-right{
+transform: translateX(-104%);
+}
+.fade-left, .fade-right{
+
+transition: transform 900ms ease-out;
+
+}
+
+.fade-left.appear, .fade-right.appear{
+
+transform: translateX(0);
+}
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/* Social Media icons */
+.footer {
+display: flexbox;
+text-align:center;
+flex-direction: post;
+box-sizing: border-box;
+
+}
+.footer h2, .footer p{
+ padding:0px;
+ margin: 0px;
+ color: #FFFF; 
+}
+.social-med{
+  display: inline-block;
+}
+
+ .social-med a{
+text-decoration:none;
+color: #FFFF;
+font-size: 5rem;
+padding: 1.5rem; 
+}
+.fa{
+  transform: scale(0.8);
+  transition-duration: 0.5s;
+}
+.fa:hover {
+transform: scale(1.1);
+color: #fff;
+} 
+footer .autor{
+margin:1rem; 
+font-size: 12px;  
+}
+
+footer hr{
+  width: 30%;
+}
+footer a{
+text-decoration: none;
+color:black;
+}
+/* three  image section ends */
+.footer {
+margin-top: 10rem;
+padding:2.5rem;	
+background-color: #007EC5;
+width:100%;
+height: auto;
+color: #fff;
+font-size: 1.8rem;
+}
+
+@media screen and (max-width: 576px) {
+.post {
+  margin: 16px 8px 16px 8px;
+}
+.politics p{
+  font-size: 1.5rem;
+}
+
+}
+
+@media screen and (max-width: 768px){
+
+
+.footer h2{
+font-size: 1.8rem;
+}
+.footer p{
+  font-size: 1.3rem;
+}
+ .social-med a{
+font-size: 4rem;
+padding: 1.5rem; 
+}
+footer .autor{
+margin:1.5rem; 
+font-size: 12px;
+}
+footer hr{
+  width: 35%;
+}
+
+}
+	
+
+
